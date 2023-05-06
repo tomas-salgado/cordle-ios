@@ -1,0 +1,6 @@
+framework module Pods_cordle {
+  umbrella header "Pods-cordle-umbrella.h"
+
+  export *
+  module * { export * }
+}

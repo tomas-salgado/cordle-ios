@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  cordle
 //
-//  Created by 2090KM on 4/28/23.
+//  Created by Tomas on 4/28/23.
 //
 
 import UIKit

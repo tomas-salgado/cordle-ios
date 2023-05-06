@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22D17460AF3EEA896E926302 /* Pods_cordle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27E69072D6378D3C5D468223 /* Pods_cordle.framework */; };
+		9269460129FF536500B3421A /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9269460029FF536500B3421A /* TutorialViewController.swift */; };
 		92D2004929FC86CF00934F2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2004829FC86CF00934F2C /* AppDelegate.swift */; };
 		92D2004B29FC86CF00934F2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2004A29FC86CF00934F2C /* SceneDelegate.swift */; };
 		92D2004D29FC86CF00934F2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2004C29FC86CF00934F2C /* ViewController.swift */; };
 		92D2005029FC86CF00934F2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D2004E29FC86CF00934F2C /* Main.storyboard */; };
 		92D2005229FC86D000934F2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92D2005129FC86D000934F2C /* Assets.xcassets */; };
 		92D2005529FC86D000934F2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92D2005329FC86D000934F2C /* LaunchScreen.storyboard */; };
+		92D2005F29FC87B100934F2C /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2005E29FC87B100934F2C /* KeyboardViewController.swift */; };
+		92D2006129FC87C700934F2C /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2006029FC87C700934F2C /* BoardViewController.swift */; };
+		92D2006329FCAC4600934F2C /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D2006229FCAC4600934F2C /* KeyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27E69072D6378D3C5D468223 /* Pods_cordle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cordle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8209A702DE2DEF6886DC0F88 /* Pods-cordle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cordle.release.xcconfig"; path = "Target Support Files/Pods-cordle/Pods-cordle.release.xcconfig"; sourceTree = "<group>"; };
+		8FA3CFE61A7DB9B511451144 /* Pods-cordle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cordle.debug.xcconfig"; path = "Target Support Files/Pods-cordle/Pods-cordle.debug.xcconfig"; sourceTree = "<group>"; };
+		9269460029FF536500B3421A /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		92D2004529FC86CF00934F2C /* cordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D2004829FC86CF00934F2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92D2004A29FC86CF00934F2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,9 @@
 		92D2005129FC86D000934F2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92D2005429FC86D000934F2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92D2005629FC86D000934F2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D2005E29FC87B100934F2C /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		92D2006029FC87C700934F2C /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		92D2006229FCAC4600934F2C /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D17460AF3EEA896E926302 /* Pods_cordle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				92D2004729FC86CF00934F2C /* cordle */,
 				92D2004629FC86CF00934F2C /* Products */,
+				AE30B24B2EE647873DE81E54 /* Pods */,
+				EEB6F66E225734BC3D3ECEEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +71,44 @@
 		92D2004729FC86CF00934F2C /* cordle */ = {
 			isa = PBXGroup;
 			children = (
-				92D2004829FC86CF00934F2C /* AppDelegate.swift */,
-				92D2004A29FC86CF00934F2C /* SceneDelegate.swift */,
+				92D2005D29FC874100934F2C /* Other */,
 				92D2004C29FC86CF00934F2C /* ViewController.swift */,
-				92D2004E29FC86CF00934F2C /* Main.storyboard */,
-				92D2005129FC86D000934F2C /* Assets.xcassets */,
-				92D2005329FC86D000934F2C /* LaunchScreen.storyboard */,
+				9269460029FF536500B3421A /* TutorialViewController.swift */,
+				92D2005E29FC87B100934F2C /* KeyboardViewController.swift */,
+				92D2006229FCAC4600934F2C /* KeyCell.swift */,
+				92D2006029FC87C700934F2C /* BoardViewController.swift */,
 				92D2005629FC86D000934F2C /* Info.plist */,
 			);
 			path = cordle;
+			sourceTree = "<group>";
+		};
+		92D2005D29FC874100934F2C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				92D2004E29FC86CF00934F2C /* Main.storyboard */,
+				92D2005329FC86D000934F2C /* LaunchScreen.storyboard */,
+				92D2005129FC86D000934F2C /* Assets.xcassets */,
+				92D2004A29FC86CF00934F2C /* SceneDelegate.swift */,
+				92D2004829FC86CF00934F2C /* AppDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AE30B24B2EE647873DE81E54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FA3CFE61A7DB9B511451144 /* Pods-cordle.debug.xcconfig */,
+				8209A702DE2DEF6886DC0F88 /* Pods-cordle.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EEB6F66E225734BC3D3ECEEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27E69072D6378D3C5D468223 /* Pods_cordle.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +118,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92D2005929FC86D000934F2C /* Build configuration list for PBXNativeTarget "cordle" */;
 			buildPhases = (
+				7214588A8B769D609BB9C260 /* [CP] Check Pods Manifest.lock */,
 				92D2004129FC86CF00934F2C /* Sources */,
 				92D2004229FC86CF00934F2C /* Frameworks */,
 				92D2004329FC86CF00934F2C /* Resources */,
+				7CC7088FC634EAA6C27A187B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +179,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7214588A8B769D609BB9C260 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cordle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CC7088FC634EAA6C27A187B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cordle/Pods-cordle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cordle/Pods-cordle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cordle/Pods-cordle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92D2004129FC86CF00934F2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				92D2004D29FC86CF00934F2C /* ViewController.swift in Sources */,
+				9269460129FF536500B3421A /* TutorialViewController.swift in Sources */,
 				92D2004929FC86CF00934F2C /* AppDelegate.swift in Sources */,
 				92D2004B29FC86CF00934F2C /* SceneDelegate.swift in Sources */,
+				92D2006329FCAC4600934F2C /* KeyCell.swift in Sources */,
+				92D2005F29FC87B100934F2C /* KeyboardViewController.swift in Sources */,
+				92D2006129FC87C700934F2C /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +374,7 @@
 		};
 		92D2005A29FC86D000934F2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA3CFE61A7DB9B511451144 /* Pods-cordle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +403,7 @@
 		};
 		92D2005B29FC86D000934F2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8209A702DE2DEF6886DC0F88 /* Pods-cordle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
